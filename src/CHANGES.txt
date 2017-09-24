@@ -6,14 +6,25 @@
 
 
 RELEASE  VERSION/DATE TO BE FILLED IN LATER
-
-  From John Doe:
-
-    - Whatever John Doe did.
+  From Anders T. Akre:
+    - Fixed broken links in README.rst
 
   From Thomas Berg:
     - Fixed a regression in scons-3.0.0 where "from __future__ import print_function" was imposed
       on the scope where SConstruct is executed, breaking existing builds using PY 2.7.
+
+  From Christian Sandberg:
+    - Fix Usage on embedded Python. First entry in sys.path is not always the script directory. 
+      On the embedded distribution of Python 3, sys.path does not contain the script directory at 
+      all. Always removing the first entry will remove the path to the standard libraries.
+
+  From Richard W (grbd on github):
+    - Added user doc entry for the use of scanners with builders
+    - Changes to user docs for overriding construction variables when calling a Builder
+
+  From William Deegan:
+    - Fix bootstrap.py to work with git.
+
 
 RELEASE 3.0.0 - Mon, 18 Sep 2017 08:32:04 -0700
 
